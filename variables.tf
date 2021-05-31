@@ -1,6 +1,13 @@
 #
 # Variables
 #
+
+variable "monitor_type" {
+  type        = string
+  description = "Type for all monitors among incident, information"
+  default     = ""
+}
+
 variable "template" {
   description = "Template name"
   default     = "caas-kubernetes"
